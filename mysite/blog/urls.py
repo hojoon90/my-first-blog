@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns=[
     url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail')
 ]
 '''
 이 패턴은 장고에게 누군가 웹사이트에 'http://127.0.0.1:8000/' 주소로 들어왔을 때 views.post_list를 보여주라고 말할 거에요. 
